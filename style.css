@@ -6,7 +6,7 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: url('https://images.unsplash.com/photo-1581093588401-008c4f5f2d2c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
   background-size: cover;
   color: #f1f1f1;
   overflow-x: hidden;
@@ -23,6 +23,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+header h1::before {
+  content: "🚀";
+  margin-right: 0.5em;
 }
 
 .language-toggle button {
@@ -43,10 +48,11 @@ header {
 
 .hero {
   background: rgba(0, 0, 0, 0.7);
-  padding: 4em 2em;
+  padding: 4em 2em 6em 2em;
   text-align: center;
   backdrop-filter: blur(4px);
   animation: fadeIn 1.2s ease;
+  position: relative;
 }
 
 .hero h2 {
@@ -58,6 +64,16 @@ header {
 .hero p {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: #ccc;
 }
 
 .cta {
@@ -146,4 +162,9 @@ footer {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
 }
