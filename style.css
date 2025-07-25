@@ -4,21 +4,22 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: #1a1a1a;
+  color: #f1f1f1;
 }
 
 header {
-  background: #2c3e50;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
   color: white;
-  padding: 1em;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .language-toggle button {
-  background: white;
+  background: #f1f1f1;
   color: #2c3e50;
   border: none;
   padding: 0.4em 0.8em;
@@ -29,8 +30,8 @@ header {
 }
 
 .hero {
-  background: #ecf0f1;
-  padding: 2em;
+  background: #2c2c2c;
+  padding: 3em 2em;
   text-align: center;
 }
 
@@ -40,19 +41,23 @@ header {
   color: white;
   padding: 0.75em 1.5em;
   text-decoration: none;
-  margin-top: 1em;
+  margin-top: 1.5em;
   border-radius: 5px;
   font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: #2980b9;
 }
 
 main section {
   padding: 2em;
   max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  margin-top: 1em;
+  margin: 2em auto;
+  background: #2c2c2c;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 ul {
@@ -62,26 +67,38 @@ ul {
 
 ul li {
   padding: 0.5em 0;
+  border-bottom: 1px solid #444;
+}
+
+ul li:last-child {
+  border-bottom: none;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1em;
+  background: #1f1f1f;
+  color: #f1f1f1;
 }
 
 table, th, td {
-  border: 1px solid #ddd;
+  border: 1px solid #444;
   text-align: left;
   padding: 0.75em;
 }
 
+th {
+  background: #333;
+}
+
 footer {
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
   font-size: 0.9em;
-  background: #ecf0f1;
-  margin-top: 2em;
+  background: #111;
+  margin-top: 3em;
+  color: #aaa;
 }
 
 .is, .en {
