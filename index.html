@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant for Icelandic Businesses</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleLanguage(lang) {
+      const en = document.querySelectorAll(".en");
+      const is = document.querySelectorAll(".is");
+      en.forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+      is.forEach(el => el.style.display = lang === 'is' ? 'block' : 'none');
+    }
+    window.onload = () => toggleLanguage('en');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>⚙️ <span class="en">Icelandic AI Automation</span><span class="is">Sjálfvirkni með gervigreind</span></h1>
+    <div class="language-toggle">
+      <button onclick="toggleLanguage('is')">🇮🇸</button>
+      <button onclick="toggleLanguage('en')">🇬🇧</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2 class="en">Automate the tasks no one wants to do.</h2>
+      <h2 class="is">Sjálfvirknivæddu verkefnin sem enginn vill sinna.</h2>
+      <p class="en">AI-powered document, email, and admin assistants for Icelandic businesses.</p>
+      <p class="is">AI-aðstoðarmenn fyrir skjöl, pósta og skriffinnsku í íslenskum rekstri.</p>
+      <a href="#" class="cta">Get Early Access</a>
+    </section>
+
+    <section>
+      <h3 class="en">What our assistant can do:</h3>
+      <h3 class="is">Hlutverk aðstoðarmannsins:</h3>
+      <ul>
+        <li class="en">📩 Read and summarize emails</li>
+        <li class="is">📩 Lesa og draga saman póst</li>
+        <li class="en">📎 Extract data from PDFs and Word docs</li>
+        <li class="is">📎 Draga fram gögn frá skjölum</li>
+        <li class="en">📊 Auto-generate reports and Excel sheets</li>
+        <li class="is">📊 Búa til skýrslur og töflureikni</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="en">Simple pricing</h3>
+      <h3 class="is">Einföld verðskráning</h3>
+      <table>
+        <tr><th class="en">Plan</th><th class="is">Pakki</th><th>ISK / mánuði</th></tr>
+        <tr><td>Starter</td><td>Grunnur</td><td>5,900</td></tr>
+        <tr><td>Pro</td><td>Pro</td><td>9,900</td></tr>
+        <tr><td>Custom</td><td>Sérsniðinn</td><td>Sendu fyrirspurn</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <p class="en">Free setup for early users. GDPR-compliant. Local support.</p>
+      <p class="is">Frí uppsetning fyrir fyrstu notendur. GDPR samræmt. Stuðningur á Íslandi.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI Assistant. <span class="en">All rights reserved.</span><span class="is">Öll réttindi áskilin.</span></p>
+  </footer>
+</body>
+</html>
